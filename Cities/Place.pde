@@ -10,6 +10,8 @@ public class Place{
   } 
   
   //Method to convert latitude and longitude
-  
+  void convertLanLon(){
+    
+  }
   
 }
