@@ -1,0 +1,105 @@
+<datasourcespec>
+  <name>WorldCat Web Service: xISBN</name>
+  <path>http://xisbn.worldcat.org/webservices/xid/isbn/@{isbn}</path>
+  <format>XML</format>
+  
+  <infourl>http://xisbn.worldcat.org</infourl>
+  
+  <params>
+    <pathparam required="true">
+      <key>isbn</key>
+      <description>An ISBN Number</description>
+    </pathparam>
+  
+  <queryparam>
+    <key>method</key>
+    <value>getMetadata</value>
+  </queryparam>
+
+  <queryparam>
+    <key>fl</key>
+    <value>*</value>
+  </queryparam>
+
+    <queryparam>
+    <key>format</key>
+    <value>xml</value>
+  </queryparam>
+
+  </params>
+  
+  
+  <dataspec>
+<compfield>
+  <basepath>isbn</basepath>
+  <description/>
+  <fields>
+    <field>
+      <name>edition</name>
+      <primfield>
+        <basepath>ed</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>year</name>
+      <primfield>
+        <basepath>year</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>title</name>
+      <primfield>
+        <basepath>title</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>author</name>
+      <primfield>
+        <basepath>author</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>form</name>
+      <primfield>
+        <basepath>form</basepath>
+        <description/>
+      </primfield>
+    </field>  
+    <field>
+      <name>url</name>
+      <primfield>
+        <basepath>url</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>language</name>
+      <primfield>
+        <basepath>lang</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>lccn</name>
+      <primfield>
+        <basepath>lccn</basepath>
+        <description/>
+      </primfield>
+    </field>
+    <field>
+      <name>oclcnum</name>
+      <primfield>
+        <basepath>oclcnum</basepath>
+        <description/>
+      </primfield>
+    </field>
+  </fields>
+</compfield>  
+  </dataspec>
+  
+  
+</datasourcespec>
